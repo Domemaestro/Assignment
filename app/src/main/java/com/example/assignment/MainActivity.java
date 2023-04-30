@@ -17,8 +17,13 @@ public class MainActivity extends AppCompatActivity {
         firstActivity = findViewById(R.id.button1);
         secondActivity = findViewById(R.id.button2);
 
-        firstActivity.setOnClickListener(v -> Toast.makeText(getApplicationContext(),"First Activity",Toast.LENGTH_SHORT).show());
+        firstActivity.setOnClickListener(v ->
 
-        secondActivity.setOnClickListener(v -> Toast.makeText(getApplicationContext(),"Second Activity",Toast.LENGTH_SHORT).show());
+                Toast.makeText(getApplicationContext(),"First Activity",Toast.LENGTH_SHORT).show()
+        );
+
+        secondActivity.setOnClickListener(v ->
+                Toast.makeText(getApplicationContext(),"Second Activity",Toast.LENGTH_SHORT).show()
+        );
     }
 }
