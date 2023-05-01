@@ -38,7 +38,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="@drawable/play"
-
         app:layout_constraintEnd_toEndOf="@+id/musicIcon"
         app:layout_constraintStart_toStartOf="@+id/musicIcon"
         app:layout_constraintTop_toBottomOf="@+id/musicIcon" />
