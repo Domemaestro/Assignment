@@ -4,6 +4,7 @@
     <string name="first_activity">Select Music</string>
     <string name="second_activity">Select Image</string>
     <string name="add_image">Add Image</string>
+    <string name="pick_music">Pick Music and Play</string>
 
 
 </resources>
