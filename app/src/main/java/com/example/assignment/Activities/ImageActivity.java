@@ -38,19 +38,17 @@ public class ImageActivity extends AppCompatActivity {
         Intent selectImage = new Intent();
         selectImage.setType("image/*");
         selectImage.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(selectImage,"Select Image"),1);
+        startActivityForResult(selectImage,1);
     }
 
      @Override
      public void onActivityResult(int requestCode, int resultCode, Intent data) {
          super.onActivityResult(requestCode, resultCode, data);
 
-         if (resultCode == RESULT_OK){
-             if (requestCode == 1){
-                 Uri imageUri = data.getData();
-                 if(null != imageUri){
-                     dispImage.setImageURI(imageUri);
-                 }
+         if (requestCode == 1){
+             Uri imageUri = data.getData();
+             if (imageUri != null){
+                 dispImage.setImageURI(imageUri);
              }
          }
      }
